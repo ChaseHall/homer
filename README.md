@@ -3,7 +3,7 @@ A dead simple static **HOM**epage for your serv**ER** to keep your services on h
 
 If you need authentication support, you're on your own (it can be secured using a web server auth module or exposing it only through a VPN network / SSH tunnel, ...)
 
-![screenshot](https://github.com/ChaseHall/homer/blob/master/screenshot.png)
+![screenshot](https://git.chasehall.net/Chase/homer/raw/branch/master/screenshot.png)
 
 **How to build / install it? Where is the webpack config?**
 There is no build system (😱), use it like that! It's meant to be stupid simple & zero maintenance required. just copy the static files somewhere, and visit the `index.html`.
