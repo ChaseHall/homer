@@ -35,7 +35,7 @@ services:
         logo: "assets/tools/plex.png"
         subtitle: "Plex Media Server Frontend"
         tag: ""
-        url: "http://127.0.0.1:32400/web/index.html"
+        url: "http://127.0.0.1:32400/web/"
       - name: "Sonarr"
         logo: "assets/tools/sonarr.jpg"
         subtitle: "Automatically download TV Shows for Plex"
