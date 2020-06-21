@@ -1,4 +1,4 @@
-# Homer
+# Homer [![GitHub stars](https://img.shields.io/github/stars/ChaseHall/homer)](https://github.com/ChaseHall/homer/stargazers)
 A dead simple static **HOM**epage for your serv**ER** to keep your services on hand, from a simple `yaml` configuration file.
 
 If you need authentication support, you're on your own.
