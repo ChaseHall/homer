@@ -55,3 +55,10 @@ services:
         tag: ""
         url: "https://sub.domain.tld/page"
 ```
+
+
+---
+
+### Changes
+* Remove header/other view.
+* Change CSS.
