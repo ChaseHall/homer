@@ -3,52 +3,62 @@ A dead simple static **HOM**epage for your serv**ER** to keep your services on h
 
 If you need authentication support, you're on your own.
 
-![screenshot](https://git.chasehall.net/Chase/homer/raw/branch/master/screenshot.png)
+![screenshot](https://i.imgur.com/LUu52eR.png)
 
-**How to build / install it? Where is the webpack config?**
-There is no build system (😱), use it like that! It's meant to be stupid simple & zero maintenance required. just copy the static files somewhere, and visit the `index.html`.
+**How to use?**
+Simply copy the files to a directory on your web server, and visit `index.html`.
+**Note: This will not work directly over file:// protocol.**
 
 
-## configuration
+## Configuration
 
 Title, icons, links, colors, and services can be configured in the `config.yml` file, using [yaml](http://yaml.org/) format.
 
 
 ```yaml
 ---
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Services"
+  - name: "Section 1"
     icon: []
     items:
-      - name: "qBittorrent"
-        logo: "assets/tools/qbit.png"
-        subtitle: "Admin UI for Torrents"
+      - name: "Service 1"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png"
+        subtitle: "Lorem ipsum dolor sit amet."
         tag: ""
-        url: "http://127.0.0.1:8080"
+        url: "https://domain.tld"
+      - name: "Service 2"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png"
+        subtitle: "Lorem ipsum dolor sit amet."
+        tag: ""
+        url: "https://subdomain.domain.tld"
+      - name: "Service 3"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png"
+        subtitle: "Lorem ipsum dolor sit amet."
+        tag: ""
+        url: "https://sub.domain.tld/page"
   - name: "Plex"
     icon: []
     items:
-      - name: "Plex"
-        logo: "assets/tools/plex.png"
-        subtitle: "Plex Media Server Frontend"
+      - name: "Service 1"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png"
+        subtitle: "Lorem ipsum dolor sit amet."
         tag: ""
-        url: "http://127.0.0.1:32400/web/"
-      - name: "Sonarr"
-        logo: "assets/tools/sonarr.jpg"
-        subtitle: "Automatically download TV Shows for Plex"
+        url: "https://domain.tld"
+      - name: "Service 2"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png"
+        subtitle: "Lorem ipsum dolor sit amet."
         tag: ""
-        url: "http://localhost:8989/"
-      - name: "Radarr"
-        logo: "assets/tools/radarr.png"
-        subtitle: "Automatically download Movies for Plex"
+        url: "https://subdomain.domain.tld"
+      - name: "Service 3"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png"
+        subtitle: "Lorem ipsum dolor sit amet."
         tag: ""
-        url: "http://localhost:7878/"
-      - name: "Jackett"
-        logo: "assets/tools/jackett.png"
-        subtitle: "Manage trackers for Sonarr + Radarr"
-        tag: ""
-        url: "http://localhost:9117/"
+        url: "https://sub.domain.tld/page"
 ```
+
+
+---
+
+### Changes
+* Remove header/other view.
+* Change CSS.
